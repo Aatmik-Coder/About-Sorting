@@ -8,7 +8,7 @@ public class InsertionSort
 {
     public static void main(String[] args) 
     {
-        int[] arr = {50*10, 120*10, 40*10, 20*10, 10*10};  // Array
+        int[] arr = {50, 120, 40, 20, 10};  // Array
         int j = 0;                       // Initializing Variable j
         int k = arr.length;              // Initializing variable k with length of an array
         
@@ -26,9 +26,10 @@ public class InsertionSort
             {
                 arr[j+1] = arr[j];      /* Initializing value of arr[j+1](i.e at index 1 for 1st loop) with value of 
                                             arr[j](i.e in this example 5 because in this case initially value of arr[0]
-                                                    is 5 because j = i - 1 (i.e j = 1 - 1) for first case only)*/  
-                arr[j] = key;           /* As we know the value of key is 2 so now allocating value to arr[j] 
-                                            (i.e arr[0] = 2)*/
+                                                    is 5 because j = i - 1 (i.e j = 1 - 1) for first case only) */
+                
+                arr[j] = key;           /* In this step we have to swap value of key with arr[j].*/
+                
                 if(j > 0)               /* If j is greater than 0 than j-- initially for first looping it will 
                                             be 0 so this condition will not be satisfied but after that it will help
                                             to sort the array*/
